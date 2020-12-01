@@ -7,7 +7,11 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') }
     ]
   },
-
+  // 登陆页面
+  {
+    path: '/login',
+    component: () => import('pages/login/')
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

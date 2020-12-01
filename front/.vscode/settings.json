@@ -1,7 +1,27 @@
 {
-  "vetur.validation.template": false,
-  "vetur.format.enable": false,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
-  
-  "vetur.experimental.templateInterpolationService": true
+    "editor.tabSize": 2,
+    "vetur.validation.template": false,
+    "search.followSymlinks": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "prettier.disableLanguages": [],
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        {
+        "language": "javascript",
+        "autoFix": true
+        },
+        "javascriptreact",
+        {
+        "language": "html",
+        "autoFix": true
+        },
+        {
+        "language": "vue",
+        "autoFix": true
+        }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
